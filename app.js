@@ -1,3 +1,4 @@
+var bodyParser = require('body-parser');
 var express = require('express');
 
 var index = require('./routes/index');
@@ -5,6 +6,9 @@ var multi = require('./routes/multi_search');
 var single = require('./routes/single_search');
 
 var app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', index);
 app.use('/single', single);
@@ -17,8 +21,4 @@ app.use(function (request, response, next) {
     next(error);
 });
 
-// app listen
-const port = 3300;
-app.listen(port, () => {
-    console.log('server is running on port' + port + '...');
-});
+module.exports = app;
