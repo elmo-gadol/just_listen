@@ -1,0 +1,22 @@
+{
+  "name": "just_listen",
+  "version": "1.0.0",
+  "description": "the server application for plus friend `JUST LISTEN` in kakaotalk.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmo-gadol/just_listen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmo-gadol/just_listen/issues"
+  },
+  "homepage": "https://github.com/elmo-gadol/just_listen#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
