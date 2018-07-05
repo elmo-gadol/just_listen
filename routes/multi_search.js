@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 router.get('/', function(request, response, next) {
-    var song = request.body.song;
-    var songs = song.split(',');
+    let song = request.body.song;
+    let songs = song.split(',');
     let response_test = {
         "message": "THIS IS MULTIPLE QUERY MODULE.",
         "song": songs

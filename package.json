@@ -18,6 +18,10 @@
   "homepage": "https://github.com/elmo-gadol/just_listen#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "needle": "^2.2.1",
+    "phantom": "^6.0.3",
+    "request": "^2.87.0"
   }
 }
