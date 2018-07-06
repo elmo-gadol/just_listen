@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', function(request, response, next) {
+router.get('/', (request, response, next) => {
     response.send('@JUST LISTEN@\n');
 });
 

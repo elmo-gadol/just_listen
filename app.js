@@ -15,7 +15,7 @@ app.use('/single', single);
 app.use('/multi', multi)
 
 // catch 404
-app.use(function (request, response, next) {
+app.use((request, response, next) => {
     let error = new Error('NOT FOUND');
     error.status = 404;
     next(error);
