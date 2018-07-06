@@ -4,6 +4,7 @@ const express = require('express');
 const index = require('./routes/index');
 const multi = require('./routes/multi_search');
 const single = require('./routes/single_search');
+const meta = require('./routes/meta_search');
 
 const app = express();
 
@@ -12,7 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', index);
 app.use('/single', single);
-app.use('/multi', multi)
+app.use('/multi', multi);
+app.use('/meta', meta);
 
 // catch 404
 app.use((request, response, next) => {
